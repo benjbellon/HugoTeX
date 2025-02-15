@@ -17,7 +17,7 @@ hugo server -t ../..
 # open http://localhost:1313/
 ```
 
-Hugo (>= **0.92.0**) is required.
+Hugo (>= **0.128.0**) is required.
 
 ## Config settings
 
@@ -26,11 +26,13 @@ example
 ```toml
 baseURL = "https://hugotex.vercel.app/"
 title = "HugoTeX"
-paginate = 3
 languageCode = "en"
 DefaultContentLanguage = "en"
 enableInlineShortcodes = true
 footnoteReturnLinkContents = "^"
+
+[pagination]
+  pagerSize = 3
 
 [Params.Author]
   name = "Kaito Sugimoto"
